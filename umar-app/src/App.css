@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main-div {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+}
+.main-div .logo {
+  color: #3b5998;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .menus {
+}
+.menus ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  width: 700px;
+}
+.menus li {
+  list-style: none;
+}
+.menus ul li a {
+  text-decoration: none;
+  font-size: 22px;
+}
+.main-div .social-media {
+  width: 200px;
+}
+.social-media ul {
+  display: flex;
+  height: 90px;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-media li {
+  list-style: none;
+  text-align: right;
+}
+.social-media .face {
+  color: blue;
+  font-size: 22px;
+}
+.social-media .insta {
+  color: purple;
+  font-size: 22px;
+}
+.social-media .you {
+  color: red;
+  font-size: 22px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 40px;
+  letter-spacing: 1;
+}
+.hero p {
+  font-size: 20px;
+}
+.social-media .hamburger {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.mobile-menus {
+  display: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+}
+.mobile-menus ul li a {
+  font-size: 35px;
+  text-decoration: none;
+}
+.mobile-menus ul li {
+  list-style: none;
+  margin: 10px 20px;
+}
+.mobile-menus ul li a:hover {
+  font-size: 37px;
+}
+
+@media (max-width: 1080px) {
+  .menus ul {
+    width: 500px;
+  }
+  .social-media .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 998px) {
+  .main-div {
+    justify-content: space-between;
+  }
+  .menus ul {
+    display: none;
+  }
+  .social-media ul {
+    display: none;
+  }
+  .logo {
+    font-size: 35px;
+    margin-left: 10px;
+  }
+  .social-media .hamburger {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-div {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 25px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 300px) {
+  .main-div {
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 20px;
+    margin-left: 3px;
+  }
+  .social-media .hamburger {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
